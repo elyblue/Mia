@@ -10,7 +10,7 @@ const PORT = process.env.PORT ?? 3008
 
 const welcomeFlow = addKeyword<Provider, Database>([''])
     .addAnswer(
-        "Hola! 🩵 Bienvenido a MyData, el primer Sistema Integral de Biodata Activa! Nos alegra tenerte en nuestra *comunidad*. ¿Cómo puedo ayudarte hoy?\n\n1. Soy nuevo y necesito ayuda 🙂\n2. Quiero hablar con mi navegadora 😉\n3. Tengo un problema con la app 😐",
+        "Hola! 🩵 Bienvenido a MyData, el primer Sistema Integral de Biodata Activa Nos alegra tenerte en nuestra *comunidad*. ¿Cómo puedo ayudarte hoy?\n\n1. Soy nuevo y necesito ayuda 🙂\n2. Quiero hablar con mi navegadora 😉\n3. Tengo un problema con la app 😐",
         { capture: true }, 
         async (ctx, { gotoFlow }) => {
             // Inicializar ctx.state si no existe
